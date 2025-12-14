@@ -1,0 +1,16 @@
+/* Overrides (personal site) — placed after templatemo-topic-listing.css
+   Goal: improve readability on white backgrounds without changing the theme.
+*/
+:root{
+  --p-color: #111111; /* default paragraph/list text (was #717275) */
+}
+
+/* Keep small text readable too */
+small, .small{
+  color: #111111;
+}
+
+/* Optional: make muted text a bit darker than default */
+.text-muted{
+  color: #3d3d3d !important;
+}
