@@ -1967,3 +1967,18 @@ body {
     line-height: 1.2 !important;
   }
 }
+
+/* ===== Fix: Link biru jadi putih di section JOIN (kotak ungu) ===== */
+#join .contact-us-content a,
+#join .contact-us-content a:visited,
+#join .contact-us-content a:hover,
+#join .contact-us-content a:active,
+#join .contact-us-content a:focus {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+/* Kalau link kamu pakai class button orange-button */
+#join .contact-us-content .orange-button {
+  color: #fff !important;
+}
