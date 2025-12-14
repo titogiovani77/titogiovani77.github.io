@@ -326,7 +326,8 @@ Header Style
 }
 
 .header-area .main-nav .logo h1 {
-  font-size: 36px;
+  font-size: 24px;     /* dari 36px */
+  line-height: 1.1;
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
@@ -1713,7 +1714,8 @@ body {
     display: none;
   }
   .header-area .main-nav .logo h1 {
-    font-size: 34px;
+    font-size: 18px; /* dari 34px */
+    line-height: 1.1;
   }
   .header-area .main-nav .logo {
     border-right: none;
@@ -1904,5 +1906,64 @@ body {
   }
   .fun-facts:before {
     width: 95%;
+  }
+
+}
+/* ================================
+   Giovani77 Mentorship - OVERRIDES
+   Tempel di paling bawah CSS
+================================ */
+
+/* 1) Logo/Header (tulisan di navbar kiri) */
+.header-area .main-nav .logo h1 {
+  font-size: 22px !important;   /* sebelumnya 36px */
+  line-height: 1.1 !important;
+  letter-spacing: 0.5px;
+  margin-right: 14px !important;
+  padding-right: 14px !important;
+  border-right: 1px solid rgba(250, 250, 250, 0.25) !important;
+  white-space: nowrap;          /* biar gak pecah jadi 2 baris */
+}
+
+/* Kalau header jadi background (pas scroll), tetap rapi */
+.background-header .main-nav .logo h1 {
+  font-size: 20px !important;
+  line-height: 1.1 !important;
+}
+
+/* 2) HERO / Banner title */
+.main-banner .item h2 {
+  font-size: 40px !important;   /* sebelumnya 48px */
+  line-height: 1.15 !important; /* sebelumnya 70px */
+  width: 70% !important;        /* biar gak terlalu mepet */
+}
+
+/* 3) Responsive: Tablet */
+@media (max-width: 992px) {
+  .header-area .main-nav .logo h1 {
+    font-size: 18px !important; /* sebelumnya 34px */
+    border-right: none !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    white-space: normal;
+  }
+
+  .main-banner .item h2 {
+    font-size: 30px !important; /* sebelumnya 36px */
+    line-height: 1.2 !important;
+    width: 100% !important;
+  }
+}
+
+/* 4) Responsive: Mobile */
+@media (max-width: 767px) {
+  .header-area .main-nav .logo h1 {
+    font-size: 16px !important;
+    line-height: 1.15 !important;
+  }
+
+  .main-banner .item h2 {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
   }
 }
